@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHound — Black Friday Deal Finder</title>
+<meta name="description" content="45 real Black Friday and Cyber Monday 2026 deals, each price checked on 27 Nov 2026, with an honest verdict on whether it is really a deal.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#/">DealHound</a>
+    <p class="tagline">Black Friday &amp; Cyber Monday 2026 — real deals, checked today, verdicts included.</p>
+  </div>
+</header>
+<section class="stats wrap" aria-label="Board summary">
+  <div><strong id="stat-deals">45</strong><span>deals checked</span></div>
+  <div><strong id="stat-stores">7</strong><span>stores</span></div>
+  <div><strong id="total-savings">$0</strong><span>total savings</span></div>
+  <div><strong id="stat-newlows">0</strong><span>new lows</span></div>
+</section>
+<section class="controls wrap" aria-label="Search and filters">
+  <label class="search-label">Search <input id="search" type="search" placeholder="Try &ldquo;AirPods&rdquo;, &ldquo;TV&rdquo;, &ldquo;LEGO&rdquo;&hellip;" autocomplete="off"></label>
+  <label>Category
+    <select id="category"><option value="All">All categories</option></select>
+  </label>
+  <label>Store
+    <select id="store"><option value="All">All stores</option></select>
+  </label>
+  <label>Discount
+    <select id="min-off">
+      <option value="0">Any discount</option>
+      <option value="20">20% off or more</option>
+      <option value="30">30% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+  </label>
+  <label>Sort
+    <select id="sort"></select>
+  </label>
+</section>
+<main id="app" class="wrap"></main>
+<footer class="wrap">
+  <p id="checked-note">All prices checked 27 Nov 2026.</p>
+  <p>How this board works: every deal was found and its price read in the source named on its page, on Black Friday, 27 November 2026. Each card says whether the price is a new low, a strong price, or a routine sale — and why. Prices move fast on Black Friday, so always check the price at the store before you pay. DealHound is an independent board, not affiliated with any store named here.</p>
+</footer>
+</body>
+</html>
